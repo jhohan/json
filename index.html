@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JSON Viewer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="toolbar">
+        <button id="openBtn">열기</button>
+        <button id="pasteBtn">붙여넣기</button>
+        <button id="formatBtn">정렬</button>
+        <input id="search" placeholder="검색" />
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <textarea id="editor" placeholder="여기에 JSON을 붙여넣거나 열기 버튼으로 파일을 불러오세요"></textarea>
+      </section>
+      <section class="right">
+        <div id="tree" class="tree"></div>
+      </section>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+  </html>

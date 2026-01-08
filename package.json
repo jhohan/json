@@ -1,0 +1,22 @@
+{
+  "name": "json-viewer",
+  "version": "0.1.0",
+  "description": "Linux JSON Viewer (Electron)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.jhohan.jsonviewer",
+    "productName": "JSON Viewer",
+    "files": ["**/*"],
+    "linux": {
+      "target": ["AppImage"]
+    }
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}

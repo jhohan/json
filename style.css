@@ -1,0 +1,22 @@
+:root{--bg:#f5f7fb;--panel:#ffffff;--accent:#2b7cff;--muted:#6b7280}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:linear-gradient(90deg,#fff,#f8fafc);box-shadow:0 1px 0 rgba(0,0,0,0.04)}
+header h1{margin:0;font-size:16px}
+.toolbar{display:flex;gap:8px;align-items:center}
+.toolbar button{padding:6px 10px;border:1px solid #ddd;background:#fff;border-radius:6px;cursor:pointer}
+.toolbar input{padding:6px 8px;border-radius:6px;border:1px solid #ddd}
+main{display:flex;height:calc(100vh - 64px)}
+.left{width:44%;padding:14px;display:flex;flex-direction:column}
+.right{width:56%;padding:14px}
+
+@media (max-width: 800px){
+  main{flex-direction:column}
+  .left,.right{width:100%}
+}
+.tree{background:var(--panel);border:1px solid #e6edf3;padding:12px;border-radius:8px;min-height:100%}
+#editor{width:100%;flex:1;height:auto;overflow:auto;resize:none;border:1px solid #e6edf3;border-radius:8px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,monospace;-webkit-overflow-scrolling:touch}
+.node{margin-left:12px}
+.key{font-weight:600;color:var(--accent)}
+.value{color:#0b5;}
+.collapser{cursor:pointer;margin-right:6px;color:var(--muted)}
